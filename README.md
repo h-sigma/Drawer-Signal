@@ -10,6 +10,7 @@ https://tnp.uservoice.com/knowledgebase/articles/172101-determining-the-com-port
 
 # Program Breakdown
 A local *server* listening at `PORT_NUM = 5555` is created. This server waits until a *client* (more on clients later) successfully connects and provides it with the *COM Port number*. Once a client does that, the server **SET**s the **RTS** pin on the converter for **100ms** before **CL**ea**R**ing it. The DTR pin is **not used**.
+
 Note: Some converters use negative logic for their control pins, i.e. a **SET** RTS pin means Voltage Low (LED off), and a **CLR** RTS pin means Voltage High (LED on). A simple test is to plug in the converter to a USB port in your pc and attach an LED to the RTS pin. If the LED stays lit all the time, this negative logic is used. 
 
 # Usage
