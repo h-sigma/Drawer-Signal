@@ -1,7 +1,7 @@
 # Drawer-Signal
 A program to operate an electronic drawer through an USB-to-TTL Converter. Currently supports Windows using the Win10 SDK and the winsock2 API. The /SUBSYSTEM option must be enabled for it to compile.
 
-Disclaimer: No security is managed in this program, and I (the repo owner) am not liable in this regard. *Anyone* who tries to connect to the specific port will be able to open the Drawer. However, the program can be extended with ease to include your own method(s) of security.
+**Disclaimer: No security is managed in this program, and I (the repo owner) am not liable in this regard. *Anyone* who tries to connect to the specific port will be able to open the Drawer. However, the program can be extended with ease to include your own method(s) of security.**
 
 # COM Ports
 The USB-to-TTL Converter will create a Virtual COM Port in your Windows OS, which enables the traditional Serial COM Ports to connect to your PC through a USB port. Each Virtual COM port is assigned a number that is not known until run-time/connection-time. So, when you use the utility, you must first find out the COM Port number assigned to your device. 
